@@ -8,6 +8,7 @@ const validateEnv = require("./config/validate");
 const dbConection = require("./config/db");
 const userRouter = require("./routes/users");
 const authRouter = require("./routes/auth");
+const postRouter = require("./routes/posts");
 
 // Config
 dotenv.config();
@@ -22,6 +23,7 @@ app.use(morgan("common"));
 
 app.use("/api/auth", authRouter);
 app.use("/api/users", userRouter);
+app.use("/api/posts", postRouter);
 
 app.listen(port, () => {
     console.log("Backend server is runnig!");
