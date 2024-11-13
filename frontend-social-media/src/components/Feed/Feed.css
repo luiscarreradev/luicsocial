@@ -1,8 +1,8 @@
 .feed {
-    flex: 6.5;
+    flex: 5.5;
     height: calc(100vh - 5rem);
 }
 
 .feedWrapper {
-    padding: 2rem;
+    padding: 4rem 2rem;
 }

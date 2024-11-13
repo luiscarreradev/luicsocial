@@ -6,9 +6,9 @@ export const Home = () => {
         <>
             <Topbar />
             <div className="homeContainer">
-                <Sidebar className="homeSidebar"/>
-                <Feed className="homeFeed"/>
-                <Rightbar className="homeRightbar"/>
+                <Sidebar />
+                <Feed />
+                <Rightbar />
             </div>
         </>
     );

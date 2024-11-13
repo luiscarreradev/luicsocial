@@ -2,3 +2,19 @@
     flex: 3.5;
     height: calc(100vh - 5rem);
 }
+
+.rightbarWrapper {
+    padding: 2rem;
+}
+
+.birthdayContainer {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.birthdayImg {
+    height: 4rem;
+    width: 4rem;
+}
