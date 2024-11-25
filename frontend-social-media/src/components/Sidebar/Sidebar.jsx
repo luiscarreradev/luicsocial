@@ -10,7 +10,8 @@ import {
     Chat,
 } from "@mui/icons-material";
 import "./Sidebar.css";
-import { fakeFriends } from "./friends";
+import { CloseFriend } from "../CloseFriend/CloseFriend";
+import { Users } from "../../utils/dummyData";
 
 export const Sidebar = () => {
     return (
@@ -57,19 +58,8 @@ export const Sidebar = () => {
                 <button className="sidebarButton">Show More</button>
                 <hr className="sidebarHr" />
                 <ul className="sidebarFriendList">
-                    {fakeFriends.map((friend, index) => {
-                        return (
-                            <li className="sidebarFriend" key={index}>
-                                <img
-                                    src={friend.url}
-                                    alt=""
-                                    className="sidebarFriendImg"
-                                />
-                                <span className="sidebarFriendName">
-                                    {friend.name}
-                                </span>
-                            </li>
-                        );
+                    {Users.map((u) => {
+                        return <CloseFriend key={u.id} {...u} />;
                     })}
                 </ul>
             </div>

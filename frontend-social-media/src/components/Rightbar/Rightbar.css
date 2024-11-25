@@ -1,20 +1,44 @@
 .rightbar {
     flex: 3.5;
     height: calc(100vh - 5rem);
+    overflow-y: auto;
+    position: sticky;
+    top: 0;
 }
 
 .rightbarWrapper {
-    padding: 2rem;
+    display: flex;
+    padding: 4rem 2rem;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .birthdayContainer {
     display: flex;
     align-items: center;
-    padding: 2rem;
+    justify-content: start;
     gap: 2rem;
 }
 
 .birthdayImg {
-    height: 4rem;
-    width: 4rem;
+    height: 5rem;
+    width: 5rem;
+}
+
+.birthdayText *:not(strong) {
+    font-weight: 300;
+}
+
+.rightbarAd {
+    width: 100%;
+    max-height: 40rem;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.rightbarFriendList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
 }

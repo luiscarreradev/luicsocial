@@ -1,9 +1,11 @@
 .sidebar {
-    flex: 3;
+    flex: 2.5;
     height: calc(100vh - 5rem);
-    overflow-y: scroll;
-    scrollbar-color: #d0d0d0 #f1f1f1;
-    scrollbar-width: auto;
+    overflow-y: auto;
+    /* scrollbar-color: #d0d0d0 #f1f1f1;
+    scrollbar-width: auto; */
+    position: sticky;
+    top: 0;
 }
 
 ::-webkit-scrollbar {
@@ -62,18 +64,4 @@
     justify-content: center;
     gap: 1.5rem;
     margin: 3rem auto;
-}
-
-.sidebarFriend {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    cursor: pointer;
-}
-
-.sidebarFriendImg {
-    height: 3rem;
-    width: 3rem;
-    border-radius: 50%;
-    object-fit: cover;
 }

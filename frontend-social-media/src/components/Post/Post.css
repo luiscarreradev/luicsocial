@@ -103,3 +103,7 @@
 .postLikeIcon {
     background-color: blue;
 }
+
+.postComments {
+    border-bottom: 1px dashed black;
+}
